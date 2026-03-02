@@ -91,5 +91,4 @@ Container component that:
 - Subscribes to the people$ observable from PersonService
 - Renders the AddPersonComponent
 - Maps over people array to display PersonComponent instances
-- Handles remove operations
-ntation](https://rxjs.dev)
+
