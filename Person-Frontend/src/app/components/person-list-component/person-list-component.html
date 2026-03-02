@@ -1,0 +1,12 @@
+<div class="container">
+    <app-add-person></app-add-person>
+    <ng-container *ngFor="let person of people$ | async; let i = index; trackBy: trackById">
+        <app-person
+            [id]="person.id"
+            [name]="person.name"
+            [age]="person.age"
+            >
+        </app-person>
+        <button (click)="removePerson(i)">Remove</button>
+    </ng-container>
+</div>
