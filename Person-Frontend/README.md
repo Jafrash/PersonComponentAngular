@@ -1,16 +1,17 @@
 # Person Management System
 
-A modern, clean Angular application for managing contact information. This project demonstrates component-based architecture, reactive programming with RxJS, and contemporary styling practices.
-
+A modern, clean Angular application for managing contact information.
 ## Screenshots
 
 ### Add Person Form
-![Add Person Form](./screenshots/add-person-form.png)
+<img width="1067" height="630" alt="image" src="https://github.com/user-attachments/assets/30e8e1d6-596d-467a-95b8-5d05ff53ede5" />
+
 
 The application features an intuitive form for adding new people to your contact list with fields for ID, Name, and Age.
 
 ### Person Cards Display
-![Person Cards](./screenshots/person-cards.png)
+<img width="1663" height="404" alt="image" src="https://github.com/user-attachments/assets/5c37e20f-3572-4120-ab76-56b7a85d3f0f" />
+
 
 Contacts are displayed in clean, card-based layouts with easy-to-use remove functionality.
 
@@ -19,17 +20,13 @@ Contacts are displayed in clean, card-based layouts with easy-to-use remove func
 - **Add Contacts**: Simple form interface to add new people with ID, name, and age information
 - **View Contacts**: Display all contacts in an organized card-based grid layout
 - **Remove Contacts**: One-click removal of contacts from your list
-- **Responsive Design**: Works seamlessly across different screen sizes
-- **Real-time Updates**: Immediate UI updates using RxJS observables
-- **Clean UI**: Natural, human-made styling that's both professional and approachable
 
 ## Technology Stack
 
 - **Framework**: Angular 21.2.0
 - **Language**: TypeScript
 - **Styling**: CSS3 with TailwindCSS
-- **State Management**: RxJS BehaviorSubject
-- **Architecture**: Standalone Components
+
 
 ## Project Structure
 
@@ -53,37 +50,6 @@ Person-Frontend/
 └── package.json
 ```
 
-## Getting Started
-
-### Prerequisites
-
-- Node.js (v18 or higher)
-- npm (v11.2.0 or higher)
-- Angular CLI (v21.2.0)
-
-### Installation
-
-1. Clone the repository:
-```bash
-git clone <repository-url>
-cd Person-Frontend
-```
-
-2. Install dependencies:
-```bash
-npm install
-```
-
-3. Start the development server:
-```bash
-npm start
-# or
-ng serve
-```
-
-4. Open your browser and navigate to `http://localhost:4200/`
-
-## Usage
 
 ### Adding a Person
 
@@ -126,80 +92,4 @@ Container component that:
 - Renders the AddPersonComponent
 - Maps over people array to display PersonComponent instances
 - Handles remove operations
-
-## Styling Philosophy
-
-The application uses a natural, human-made design approach:
-- **Simple color palette**: Blues and grays for a professional look
-- **Subtle effects**: Minimal animations and hover states
-- **Clean layouts**: Card-based design with proper spacing
-- **Readable typography**: System fonts for native feel
-- **Responsive grids**: Adapts to different screen sizes
-
-## Building for Production
-
-To build the project for production:
-
-```bash
-ng build
-```
-
-The build artifacts will be stored in the `dist/` directory. The production build is optimized for performance.
-
-## Testing
-
-Run unit tests using:
-
-```bash
-ng test
-```
-
-## Development
-
-### Code Scaffolding
-
-Generate new components:
-```bash
-ng generate component component-name
-```
-
-Generate new services:
-```bash
-ng generate service service-name
-```
-
-### Code Style
-
-The project uses:
-- Prettier for code formatting
-- TypeScript strict mode
-- Angular style guide conventions
-
-## Browser Support
-
-- Chrome (latest)
-- Firefox (latest)
-- Safari (latest)
-- Edge (latest)
-
-## Contributing
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-## License
-
-This project is licensed under the MIT License.
-
-## Author
-
-Developed as a demonstration of Angular best practices and modern web development.
-
-## Additional Resources
-
-- [Angular Documentation](https://angular.dev)
-- [Angular CLI Documentation](https://angular.dev/tools/cli)
-- [RxJS Documentation](https://rxjs.dev)
+ntation](https://rxjs.dev)
