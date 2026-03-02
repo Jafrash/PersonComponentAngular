@@ -1,12 +1,21 @@
 <div class="container">
     <app-add-person></app-add-person>
-    <ng-container *ngFor="let person of people$ | async; let i = index; trackBy: trackById">
-        <app-person
-            [id]="person.id"
-            [name]="person.name"
-            [age]="person.age"
-            >
-        </app-person>
-        <button (click)="removePerson(i)">Remove</button>
-    </ng-container>
+    
+    <div class="person-grid">
+        <ng-container *ngFor="let person of people$ | async; let i = index; trackBy: trackById">
+            <div class="person-item">
+                <app-person
+                    [id]="person.id"
+                    [name]="person.name"
+                    [age]="person.age">
+                </app-person>
+                <button class="remove-btn" (click)="removePerson(i)">Remove</button>
+            </div>
+        </ng-container>
+    </div>
+    
+    <div class="empty-state" *ngIf="!(people$ | async)?.length">
+        <h3>No People Added Yet</h3>
+        <p>Start by adding a person using the form above</p>
+    </div>
 </div>
